@@ -156,11 +156,6 @@ enable = false
 	url = "https://example.org/slack"
 	icon = "fab fa-slack"
         desc = "Chat with other project developers"
-[[params.links.user]]
-	name = "Developer mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
-        desc = "Discuss development issues around the project"
 
 [sitemap]
   changefreq = "daily"
