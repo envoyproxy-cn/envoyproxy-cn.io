@@ -148,12 +148,12 @@ enable = false
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
 	name = "GitHub"
-	url = "https://github.com/google/docsy"
+	url = "https://github.com/envoyproxy-cn/envoyproxy-cn.io"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.user]]
 	name = "Slack"
-	url = "https://example.org/slack"
+	url = "https://envoyproxy.slack.com/archives/C018HMZH37F"
 	icon = "fab fa-slack"
         desc = "Chat with other project developers"
 
