@@ -16,5 +16,6 @@ Envoy中文社区最初是由一批互联网公司中的Envoy一线工程师利�
 
 ## Roadmap
 
-## 加入社区
+## 公众号
 
+<img width="200px"  src="/images/community/gongzhanghao.png">
