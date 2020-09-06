@@ -11,6 +11,8 @@ jobs:
         with:
           hugo-version: '0.55.5'
           extended: true
+      - run: npm install postcss-cli
+      - run: yarn add --dev postcss-loader postcss-import postcss-cssnext cssnano sugarss autoprefixer
       - name: Build
         run: hugo
       - name: Deploy
