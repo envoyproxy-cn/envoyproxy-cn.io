@@ -9,12 +9,23 @@ jobs:
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.55.5'
+          hugo-version: '0.74.2'
           extended: true
-      - run: npm install postcss-cli
-      - run: yarn add --dev postcss-loader postcss-import postcss-cssnext cssnano sugarss autoprefixer
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
       - name: Build
-        run: hugo
+        run: hugo --minify
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
