@@ -144,6 +144,12 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [params.ui.readingtime]
 enable = false
 
+[params.utteranc]
+enable = true
+repo = "envoyproxy-cn/comments"
+issueTerm = "pathname"
+theme = "github-light"
+
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]

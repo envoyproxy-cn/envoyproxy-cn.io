@@ -12,5 +12,10 @@
 		<br />
 	{{ end }}
 
+	{{ if (.Site.Params.utteranc.enable) }}
+		<br />
+		{{ partial "utteranc-comment.html" . }}
+	{{ end}}
+
 	{{ partial "pager.html" . }}
 </div>

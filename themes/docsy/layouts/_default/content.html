@@ -13,5 +13,9 @@
 		<br />
 		{{ partial "disqus-comment.html" . }}
 	{{ end }}
+	{{ if (.Site.Params.utteranc.enable) }}
+		<br />
+		{{ partial "utteranc-comment.html" . }}
+	{{ end}}
 	<div class="text-muted mt-5 pt-3 border-top">{{ partial "page-meta-lastmod.html" . }}</div>
 </div>
